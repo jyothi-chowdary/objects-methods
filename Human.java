@@ -3,7 +3,8 @@ class Human{
 	static int age=20;
 	public static void listen(){}
 	 
-	public static void walk(){}
+	public void walk(){
+	System.out.println("walking");}
           
 	public static void sleep(){}
            
@@ -12,13 +13,14 @@ class Human{
     	public static void teach(){}
 	  
 public static void main(String[]args){
-Dog d1=new Dog();
-Dog d2=new Dog();
+Human d1=new Human();
+Human d2=new Human();
 System.out.println(d1==d2);
 System.out.println(d2);
 System.out.println(age);
 System.out.println(d1.name);
 System.out.println(d2.name);
+d1.walk();
 }
 }
 
